@@ -27,6 +27,8 @@ namespace PosGenerico
         private void btnSF_Click(object sender, EventArgs e)
         {
             nombre = txtNom.Text;
+
+            //lblNom.Text("");
         }
 
         private void btnSM_Click(object sender, EventArgs e)
