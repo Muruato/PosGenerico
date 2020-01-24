@@ -12,9 +12,28 @@ namespace PosGenerico
 {
     public partial class WFMuruato : Form
     {
+        String nombre;
+
         public WFMuruato()
         {
             InitializeComponent();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSF_Click(object sender, EventArgs e)
+        {
+            nombre = txtNom.Text;
+        }
+
+        private void btnSM_Click(object sender, EventArgs e)
+        {
+            nombre = txtNom.Text;
+
+            MessageBox.Show("Usted Es: "+nombre);
         }
     }
 }
