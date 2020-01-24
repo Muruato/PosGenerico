@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WFMuruato));
             this.label1 = new System.Windows.Forms.Label();
             this.btnSM = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
@@ -35,13 +36,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.lblNom = new System.Windows.Forms.Label();
+            this.btnMusica = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Algerian", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(8, 9);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(272, 24);
             this.label1.TabIndex = 0;
@@ -72,7 +76,7 @@
             // btnSF
             // 
             this.btnSF.Font = new System.Drawing.Font("Algerian", 8.25F);
-            this.btnSF.Location = new System.Drawing.Point(219, 223);
+            this.btnSF.Location = new System.Drawing.Point(144, 223);
             this.btnSF.Name = "btnSF";
             this.btnSF.Size = new System.Drawing.Size(109, 51);
             this.btnSF.TabIndex = 3;
@@ -83,27 +87,51 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 77);
+            this.label2.Font = new System.Drawing.Font("Algerian", 8.25F);
+            this.label2.Location = new System.Drawing.Point(266, 52);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(280, 12);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Ingrese su nombre";
+            this.label2.Text = "Nombre del integrante de la banda del halcon";
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(88, 93);
+            this.txtNom.Font = new System.Drawing.Font("Algerian", 8.25F);
+            this.txtNom.Location = new System.Drawing.Point(333, 67);
             this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(142, 20);
+            this.txtNom.Size = new System.Drawing.Size(142, 22);
             this.txtNom.TabIndex = 5;
             // 
             // lblNom
             // 
             this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(345, 100);
+            this.lblNom.Font = new System.Drawing.Font("Algerian", 8.25F);
+            this.lblNom.Location = new System.Drawing.Point(331, 149);
             this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(56, 13);
+            this.lblNom.Size = new System.Drawing.Size(60, 12);
             this.lblNom.TabIndex = 6;
             this.lblNom.Text = "Usted Es: ";
+            // 
+            // btnMusica
+            // 
+            this.btnMusica.Font = new System.Drawing.Font("Algerian", 8.25F);
+            this.btnMusica.Location = new System.Drawing.Point(301, 223);
+            this.btnMusica.Name = "btnMusica";
+            this.btnMusica.Size = new System.Drawing.Size(109, 51);
+            this.btnMusica.TabIndex = 7;
+            this.btnMusica.Text = "Reproducir Guts Theme";
+            this.btnMusica.UseVisualStyleBackColor = true;
+            this.btnMusica.Click += new System.EventHandler(this.btnMusica_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 67);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 87);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // WFMuruato
             // 
@@ -111,6 +139,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(557, 324);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnMusica);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.txtNom);
             this.Controls.Add(this.label2);
@@ -120,6 +150,7 @@
             this.Controls.Add(this.label1);
             this.Name = "WFMuruato";
             this.Text = "WFMuruato";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +165,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Label lblNom;
+        private System.Windows.Forms.Button btnMusica;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
