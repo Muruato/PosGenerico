@@ -37,8 +37,8 @@
             this.txtNom = new System.Windows.Forms.TextBox();
             this.lblNom = new System.Windows.Forms.Label();
             this.btnMusica = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picGuts = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picGuts)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -123,15 +123,16 @@
             this.btnMusica.UseVisualStyleBackColor = true;
             this.btnMusica.Click += new System.EventHandler(this.btnMusica_Click);
             // 
-            // pictureBox1
+            // picGuts
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 87);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.picGuts.Image = ((System.Drawing.Image)(resources.GetObject("picGuts.Image")));
+            this.picGuts.Location = new System.Drawing.Point(12, 67);
+            this.picGuts.Name = "picGuts";
+            this.picGuts.Size = new System.Drawing.Size(100, 87);
+            this.picGuts.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picGuts.TabIndex = 8;
+            this.picGuts.TabStop = false;
+            this.picGuts.Click += new System.EventHandler(this.picGuts_Click);
             // 
             // WFMuruato
             // 
@@ -139,7 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(557, 324);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picGuts);
             this.Controls.Add(this.btnMusica);
             this.Controls.Add(this.lblNom);
             this.Controls.Add(this.txtNom);
@@ -150,7 +151,7 @@
             this.Controls.Add(this.label1);
             this.Name = "WFMuruato";
             this.Text = "WFMuruato";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGuts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,6 +167,6 @@
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Label lblNom;
         private System.Windows.Forms.Button btnMusica;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picGuts;
     }
 }

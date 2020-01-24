@@ -49,5 +49,13 @@ namespace PosGenerico
             player.SoundLocation = "guts.wav";
             player.Play();
         }
+
+        private void picGuts_Click(object sender, EventArgs e)
+        {
+            SoundPlayer player = new SoundPlayer();
+
+            player.SoundLocation = "guts.wav";
+            player.Play();
+        }
     }
 }
