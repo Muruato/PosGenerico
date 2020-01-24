@@ -33,5 +33,21 @@ namespace PosGenerico
                 this.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Initializes the variables to pass to the MessageBox.Show method.
+            string message = "Ella no te ama, lo siento";
+            string caption = "La verdad absoluta de la vida";
+
+            // Displays the MessageBox.
+            DialogResult result;
+            result = MessageBox.Show(message, caption,MessageBoxButtons.OK);
+            if (result == System.Windows.Forms.DialogResult.Yes)
+            {
+                // Closes the parent form.
+                this.Close();
+            }
+        }
     }
 }
