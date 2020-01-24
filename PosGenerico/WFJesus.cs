@@ -49,5 +49,10 @@ namespace PosGenerico
                 this.Close();
             }
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            lblNombre.Text = "Si tu nombre es " + textBox1.Text + " eres gay!";
+        }
     }
 }
