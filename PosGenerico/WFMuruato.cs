@@ -14,6 +14,8 @@ namespace PosGenerico
     public partial class WFMuruato : Form
     {
         String nombre;
+        SoundPlayer player = new SoundPlayer();
+        SoundPlayer player2 = new SoundPlayer();
 
         public WFMuruato()
         {
@@ -39,23 +41,37 @@ namespace PosGenerico
         {
             nombre = txtNom.Text;
 
-            MessageBox.Show("Usted Es: "+nombre);
+            MessageBox.Show(nombre+" Miembro de la banda del halcon");
         }
 
-        private void btnMusica_Click(object sender, EventArgs e)
+        
+    
+        private void btnPlay_Click(object sender, EventArgs e)
         {
-            SoundPlayer player = new SoundPlayer();
-
-            player.SoundLocation = "guts.wav";
+            
+            if (radButGuts.Checked == true)
+            {
+                player2.Stop();
+                String cancionGuts= "guts.wav";
+            player.SoundLocation = cancionGuts;
             player.Play();
+            }
+            
+            else if (radButBehe.Checked == true)
+            {
+                player.Stop();
+                String cancionBehe = "behelit.mp3";
+                player2.SoundLocation = cancionBehe;
+                player2.Play();    
+            }
+            
         }
 
-        private void picGuts_Click(object sender, EventArgs e)
+        private void btnStop_Click(object sender, EventArgs e)
         {
-            SoundPlayer player = new SoundPlayer();
-
-            player.SoundLocation = "guts.wav";
-            player.Play();
+           player.Stop();
+           player2.Stop();
         }
+
     }
 }
