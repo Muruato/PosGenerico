@@ -24,6 +24,8 @@ namespace PosGenerico
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            player.Stop();
+            player2.Stop();
             this.Close();
         }
 
@@ -60,7 +62,7 @@ namespace PosGenerico
             else if (radButBehe.Checked == true)
             {
                 player.Stop();
-                String cancionBehe = "behelit.mp3";
+                String cancionBehe = "behelit.wav";
                 player2.SoundLocation = cancionBehe;
                 player2.Play();    
             }
@@ -73,5 +75,9 @@ namespace PosGenerico
            player2.Stop();
         }
 
+        private void WFMuruato_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
